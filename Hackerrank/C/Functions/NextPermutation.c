@@ -11,7 +11,6 @@ int next_permutation(int n, char **s)
 	int i =n-1;
     while(i>0 && strcmp(s[i-1],s[i])>=0)
         i--;
-    //printf("\ni = %d\n",i-1);
     if(i<=0) return 0;
     int j=n-1;
     while(strcmp(s[i-1],s[j])>=0)
